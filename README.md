@@ -1,6 +1,6 @@
 # energy-tests
 
-* **06-2_read_energy-charts.ipynb** - Datenauswertung von [energy-charts.de](https://energy-charts.de/) Strombilanz in Deutschland, Börsenstrompreise, Wind&Solar Einspeisung, Hochrechnung auf dreifache Einspeisung
+* **06-2_read_energy-charts.ipynb** - Datenauswertung von [energy-charts.de](https://energy-charts.de/) Strombilanz in Deutschland, Börsenstrompreise, Wind&Solar Einspeisung, Hochrechnung auf dreifache Einspeisung aus erneuerbaren Quellen
 
 * **PyOPC-Logger.ipynb** - Beispiel für OPC-Komunikation mit der Windkraftanlage (VPN-Verbindung vorrausgesetzt.)
 
