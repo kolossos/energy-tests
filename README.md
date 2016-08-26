@@ -10,3 +10,5 @@
 
 * **Solpy-02.ipynb**  PV-Leistungsberechnung mit [Solpy](http://solpy.readthedocs.io/en/latest/) und   
                   Sonnenstandsberechnungen mit [Ephem](http://rhodesmill.org/pyephem/) 
+
+Weblinks and links to live data in the [Wiki](https://github.com/kolossos/energy-tests/wiki)
