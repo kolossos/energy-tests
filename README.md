@@ -11,4 +11,7 @@
 * **Solpy-02.ipynb**  PV-Leistungsberechnung mit [Solpy](http://solpy.readthedocs.io/en/latest/) und   
                   Sonnenstandsberechnungen mit [Ephem](http://rhodesmill.org/pyephem/) 
 
+* **09-DWD-wind....ipynb** Wind-Daten des Deutschen Wetterdienstes und Korrelation mit einer einzelnen Windkraftanlage 
+                          in der Nähe. 
+
 Weblinks and links to live data in the [Wiki](https://github.com/kolossos/energy-tests/wiki)
