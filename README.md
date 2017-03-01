@@ -13,5 +13,8 @@
 
 * **09-DWD-wind....ipynb** Wind-Daten des Deutschen Wetterdienstes und Korrelation mit einer einzelnen Windkraftanlage 
                           in der Nähe. 
+                          
+* **11-pygrib02-pandas-Matplotlib.ipynb** und
+* **12-pygrib-xarray-Cartopy.ipynb** Visualisierung der NOAA-Wettervorhersagen 
 
 Weblinks and links to live data in the [Wiki](https://github.com/kolossos/energy-tests/wiki)
