@@ -1,0 +1,87 @@
+sources:
+  air_temperature Chemnitz (monthly):
+    description: DWD Katalog Lufttemperatur
+    driver: csv
+    args:
+      urlpath: 'https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/kl/historical/monatswerte_KL_00853_18810101_20181231_hist.zip'
+      csv_kwargs:
+        sep: ';'
+        na_values: -999
+    cache:
+      - type: compressed
+        decomp: zip
+        argkey: urlpath
+        regex_filter: 'produkt'
+    metadata:
+      origin_url: ''
+      plots:
+        line:
+          kind: line
+          y: MO_TT
+          width: 800
+          height: 600
+  air_temperature Chemnitz (daily):
+    description: DWD Katalog Lufttemperatur-täglich
+    driver: csv
+    args:
+      urlpath: 'https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/tageswerte_KL_00853_18820101_20181231_hist.zip'
+      csv_kwargs:
+        sep: ';'
+        na_values: -999
+        skipinitialspace: True
+    cache:
+      - type: compressed
+        decomp: zip
+        argkey: urlpath
+        regex_filter: 'produkt'
+    metadata:
+      origin_url: ''
+      plots:
+        line:
+          kind: line
+          y: MO_TT
+          width: 800
+          height: 600
+  air_temperature Lingen:
+    description: DWD Katalog Lufttemperatur
+    driver: csv
+    args:
+      urlpath: 'https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/kl/historical/monatswerte_KL_03023_18550101_20181231_hist.zip'
+      csv_kwargs:
+        sep: ';'
+        na_values: -999
+    cache:
+      - type: compressed
+        decomp: zip
+        argkey: urlpath
+        regex_filter: 'produkt'
+    metadata:
+      origin_url: ''
+      plots:
+        line:
+          kind: line
+          y: MO_TT
+          width: 800
+          height: 600
+  Stationen:
+    description: DWD Stationen
+    driver: csv
+    args:
+      urlpath: 'https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/monthly/kl/historical/KL_Monatswerte_Beschreibung_Stationen.txt'
+      csv_kwargs:
+        sep: '\s+'
+        skiprows: [1]
+        encoding: "ISO-8859-1"
+        usecols: ['Stations_id', 'von_datum', 'bis_datum', 'Stationshoehe', 'geoBreite','geoLaenge', 'Stationsname']
+    metadata:
+      origin_url: ''
+      plots:
+        scatter:
+          kind: scatter
+          x: geoLaenge
+          y: geoBreite
+          width: 600
+          height: 600
+          c: "Stationshoehe"
+          hover_cols: ["Stationsname","Stations_id"]
+ 
